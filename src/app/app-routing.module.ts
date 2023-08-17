@@ -11,14 +11,7 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  {
-    path: 'dos',
-    loadChildren: () => import('./dos/dos.module').then( m => m.DosPageModule)
-  },
-  {
-    path: 'prueba',
-    loadChildren: () => import('./prueba/prueba.module').then( m => m.PruebaPageModule)
-  },
+
 ];
 
 @NgModule({
