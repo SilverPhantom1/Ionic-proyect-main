@@ -5,7 +5,7 @@
 </ion-header>
 <ion-content [fullscreen]="true">
   <ion-card-header>
-    <ion-card-title>Ingreso de Usuario</ion-card-title>
+    <ion-card-title>Ingreso de Usuario</ion-card-title>  
   </ion-card-header>
   <ion-card-content>
     <ion-item>
@@ -17,7 +17,7 @@
       <ion-input labelplacement="stacked"></ion-input>
     </ion-item>
     <br>
-    <ion-button [routerLink]="['/inicio']" color="light">
+    <ion-button [routerLink]="['/inicio']" color="light" (click)="presentToast1()">
       Ingresar
     </ion-button>
     <ion-button [routerLink]="['/recuperar']" color="light">
@@ -27,6 +27,6 @@
 </ion-content>
 <ion-footer>
   <ion-toolbar color="primary">
-    <ion-title>Aplicacion Web</ion-title>
+    <ion-title>Sede: Plaza Oeste</ion-title>
   </ion-toolbar>
 </ion-footer>

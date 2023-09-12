@@ -3,12 +3,49 @@
     <img src="http://cdcolegiolosleonesquilpue.cl/wp-content/uploads/2019/04/duoc-uc.jpeg" alt="">
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Duoc UC Plaza Oeste</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="assets/perfil.jpg" alt="" srcset="">
+    <ion-card-header>
+      <ion-card-subtitle>Perfil</ion-card-subtitle>
+      <ion-card-title>Dylan Hernandez</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Estado: Presente
+      Edad: 25 años 
+      Sede: Plaza Oeste
+      <br>
+      <ion-button id="mostrarAlerta">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+        Ver Registros
+      </ion-button>
+      <ion-alert trigger="mostrarAlerta"
+                  header="Error"
+                  message="Usted no tiene permitido acceder a esta seccion"
+                  [buttons]="['Aceptar']">
+      </ion-alert>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button size="small"><ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon></ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button href="https://www.google.com/intl/es/gmail/about/"><ion-icon name="mail-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button href="https://moovitapp.com/santiago-642/poi/Duoc%20UC%20Sede%20Plaza%20Oeste/t/es-419?tll=-33.514903_-70.718477&ref=1&poiType=site&abTest=Control_White_header_background_POI&customerId=4908&af_sub8=%2Findex%2Fes-419%2Ftransporte_p%25C3%25BAblico-Duoc_UC_Sede_Plaza_Oeste-Santiago-site_17444888-642&af_sub9=Click%20on%20map"><ion-icon name="location-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button href="https://www.duoc.cl/alumnos/"><ion-icon name="globe-outline"></ion-icon></ion-fab-button>
+      <ion-fab-button href="https://www.facebook.com/DuocUC/?locale=es_LA"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
 <ion-footer>
   <ion-toolbar color="primary">
-    <ion-title>Aplicacion Web</ion-title>
+    <ion-title>Sede: Plaza Oeste</ion-title>
     <ion-buttons slot="end">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
